@@ -14,7 +14,7 @@ dotenv.config()
 
 const port=process.env.PORT || 5000
 const allowedOrigins=[
-  "https://vybeui.onrender.com",
+  "https://muroui.onrender.com",
   "http://localhost:5173",
   "http://127.0.0.1:5173",
   "http://localhost:3000",

@@ -7,7 +7,7 @@ const server=http.createServer(app)
 const io=new Server(server,{
     cors:{
         origin:[
-          "https://vybeui.onrender.com",
+          "https://muroui.onrender.com",
           "http://localhost:5173",
           "http://127.0.0.1:5173",
           "http://localhost:3000",
