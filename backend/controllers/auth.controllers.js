@@ -32,11 +32,24 @@ export const signUp=async (req,res)=>{
         res.cookie("token",token,{
             httpOnly:true,
             maxAge:10*365*24*60*60*1000,
-            secure:true,
-            sameSite:"None"
+            secure: process.env.NODE_ENV === "production",
+            sameSite: process.env.NODE_ENV === "production" ? "None" : "Lax"
         })
 
-        return res.status(201).json(user)
+        const responseUser = {
+          _id: user._id,
+          name: user.name,
+          userName: user.userName,
+          email: user.email,
+          profileImage: user.profileImage,
+          bio: user.bio,
+          profession: user.profession,
+          gender: user.gender,
+          followers: user.followers,
+          following: user.following
+        }
+
+        return res.status(201).json(responseUser)
 
     } catch (error) {
         return res.status(500).json({message:`signup error ${error}`})
@@ -63,11 +76,24 @@ export const signIn=async (req,res)=>{
         res.cookie("token",token,{
             httpOnly:true,
             maxAge:10*365*24*60*60*1000,
-            secure:true,
-            sameSite:"None"
+            secure: process.env.NODE_ENV === "production",
+            sameSite: process.env.NODE_ENV === "production" ? "None" : "Lax"
         })
 
-        return res.status(200).json(user)
+        const responseUser = {
+          _id: user._id,
+          name: user.name,
+          userName: user.userName,
+          email: user.email,
+          profileImage: user.profileImage,
+          bio: user.bio,
+          profession: user.profession,
+          gender: user.gender,
+          followers: user.followers,
+          following: user.following
+        }
+
+        return res.status(200).json(responseUser)
 
     } catch (error) {
         return res.status(500).json({message:`signin error ${error}`})
