@@ -4,7 +4,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import dp from "../assets/dp.webp"
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { serverUrl } from '../App';
+import { serverUrl } from '../config';
 import { setUserData } from '../redux/userSlice';
 import OtherUser from './OtherUser';
 import Notifications from '../pages/Notifications';

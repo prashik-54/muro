@@ -4,7 +4,7 @@ import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { useDispatch, useSelector } from 'react-redux';
 import NotificationCard from '../components/NotificationCard';
 import axios from 'axios';
-import { serverUrl } from '../App';
+import { serverUrl } from '../config';
 import getAllNotifications from '../hooks/getAllNotifications';
 import { setNotificationData } from '../redux/userSlice';
 function Notifications() {
@@ -51,3 +51,4 @@ const fetchNotifications=async ()=>{
 }
 
 export default Notifications
+

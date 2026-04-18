@@ -9,7 +9,7 @@ import { MdOutlineBookmarkBorder } from "react-icons/md";
 import { GoBookmarkFill } from "react-icons/go";
 import { IoSendSharp } from "react-icons/io5";
 import axios from 'axios';
-import { serverUrl } from '../App';
+import { serverUrl } from '../config';
 import { setPostData } from '../redux/postSlice';
 import { setUserData } from '../redux/userSlice';
 import FollowButton from './FollowButton';
@@ -151,3 +151,4 @@ socket?.on("commentedPost",(updatedData)=>{
 }
 
 export default Post
+

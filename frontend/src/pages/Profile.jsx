@@ -1,6 +1,6 @@
 import axios from 'axios'
 import React from 'react'
-import { serverUrl } from '../App'
+import { serverUrl } from '../config'
 import { UNSAFE_createClientRoutesWithHMRRevalidationOptOut, useNavigate, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { setProfileData, setUserData } from '../redux/userSlice'
@@ -159,3 +159,4 @@ function Profile() {
 }
 
 export default Profile
+

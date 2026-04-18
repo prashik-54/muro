@@ -3,7 +3,7 @@ import { MdOutlineKeyboardBackspace } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
 import { FiSearch } from "react-icons/fi";
 import axios from 'axios';
-import { serverUrl } from '../App';
+import { serverUrl } from '../config';
 import dp from "../assets/dp.webp"
 function Search() {
     const navigate=useNavigate()
@@ -67,3 +67,4 @@ function Search() {
 }
 
 export default Search
+

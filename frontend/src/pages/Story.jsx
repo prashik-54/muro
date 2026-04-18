@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { serverUrl } from '../App'
+import { serverUrl } from '../config'
 import { useDispatch, useSelector } from 'react-redux'
 import { setStoryData } from '../redux/storySlice'
 import StoryCard from '../components/StoryCard'
@@ -35,3 +35,4 @@ function Story() {
 }
 
 export default Story
+
