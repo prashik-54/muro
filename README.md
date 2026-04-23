@@ -92,7 +92,7 @@ cd backend
 npm install
 ```
 
-Create `.env` file:
+Create `.env` file in Backend:
 
 ```env
 PORT=5000
@@ -106,7 +106,7 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 Run backend:
 
 ```bash
-node index.js
+npm run dev
 ```
 
 ---
@@ -115,11 +115,6 @@ node index.js
 ```bash
 cd frontend
 npm install
-```
-
-Set API base URL:
-```
-http://localhost:5000
 ```
 
 Run frontend:
@@ -139,7 +134,7 @@ npm run dev
 
 ---
 
-## 🎯 Key Highlights (For Recruiters)
+## 🎯 Key Highlights
 
 ✔️ Full-stack MERN project  
 ✔️ Real-time communication using Socket.io  
@@ -147,18 +142,6 @@ npm run dev
 ✔️ Secure authentication system (JWT)  
 ✔️ Media handling with Cloudinary  
 ✔️ Production deployment (Render)  
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
----
-
-## 📜 License
-
-This project is licensed under the **MIT License**
 
 ---
 
